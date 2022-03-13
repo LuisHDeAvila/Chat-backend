@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+INSTALLCHAT(){
+mkdir ~/.chatbin
+cp . ~/.chatbin
+echo -e "alias chat='node ~/.chatbin/client.js ' \nalias serverchat='node ~/.chatbin/server.js '" >> ~/.bashrc 
+}
+INSTALLCHAT && echo "INSTALLED"
